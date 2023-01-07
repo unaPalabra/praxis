@@ -1,3 +1,5 @@
+//simple console calculator
+
 import java.util.Scanner;
 
 public class Calc {
