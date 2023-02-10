@@ -1,4 +1,4 @@
-package Vebinar_OOP;
+package Vebinar_OOP.Task_1;
 
 public class Matrix {
     private int[][] matrix;
@@ -27,6 +27,12 @@ public class Matrix {
 
     public void sum(Matrix matrix){
         if (this.h == matrix.getH() && this.w == matrix.getW()){
+            for (int i = 0; i < h; i++) {
+                for (int j = 0; j < w; j++) {
+                    this.matrix[i][j] += matrix.getMatrix()[i][j];
+                }
+
+            }
 
         }else {
             System.out.println("Матрицы разных размерностей, я не могу их сложить");

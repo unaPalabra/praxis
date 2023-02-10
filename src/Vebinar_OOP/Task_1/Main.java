@@ -1,6 +1,6 @@
-package Vebinar_OOP;
+package Vebinar_OOP.Task_1;
 
-import java.util.Arrays;
+import Vebinar_OOP.Task_1.Matrix;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,5 +25,13 @@ public class Main {
         matrix.pprint();
 
         m.sum(matrix);
+
+        Matrix n = new Matrix(new int[][]{
+                {1, 2, 3},
+                {4, 5, 6}
+        });
+
+        m.sum(n);
+        m.pprint();
     }
 }
